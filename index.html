@@ -1,88 +1,271 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TouchConsuolting</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Touch Consulting</title>
+  <link rel="icon" href="docs/img/icon_isotipo.png">
 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'M PLUS Rounded 1c', 'Space Mono';
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-
-      background-image: url(Backroound.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-
-    }
-
-    .message-box {
-      position: absolute;
-      top: 46%;
-      left: 62%;
-      margin-top: -100px;
-      margin-left: 50px;
-      color: #FFF;
-      font-weight: 300;
-      display: inline-block;
-      max-width: 1280px;
-    }
-
-    .buttons-con .action-link-wrap a {
-      background: #111a48;
-      padding: 20px 8rem;
-      border-radius: 20px;
-      color: #5A9DEA;
-      font-weight: bold;
-      font-size: 19px;
-      transition: all 0.3s linear;
-      cursor: pointer;
-      text-decoration: none;
-      margin-right: 10px;
-    }
-
-    .buttons-con .action-link-wrap a:hover {
-      background: #4e63d5;
-      color: #fff;
-    }
-
-    @media (max-width: 450px) {
-      .message-box {
-        top: 50%;
-        left: 50%;
-        margin-top: -100px;
-        margin-left: -190px;
-        text-align: center;
-      }
-    }
-  </style>
-
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/tipography.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
 </head>
 
 <body>
 
-  <div class="message-box">
-    <div class="buttons-con">
-      <div class="action-link-wrap">
-        <a href="Brochure Touch Consulting (PDF enviar).pdf" download="Brochure Touch Consulting (PDF enviar).pdf" class="link-button">DESCARGAR BROCHURE</a>
+
+  <section class="hero">
+    <div class="container-fluid container_hero_img">
+      <div class="row align-items-center align-content-center" style="height: 100%;">
+        <div class="logo_container col-12  text-center py-5 " >
+          <img src="docs/img/LogotiposTouch_Logo.png" alt="">
+        </div>
+        <div class=" col-12  text-center">
+          <h3>¡Grandes cambios estan por llegar!</h3>
+          <p>
+            Nos estamos renovando para seguir resolviendo <span style="color: #056dd6;  background-color: #cff4fb; font-weight: 500;">desafíos tecnológicos empresariales</span>, <br>
+            impulsando una transformación digital efectiva.
+
+          </p>
+          <a href="docs/Brochure Touch Consulting (PDF enviar).pdf" class="btn btn-primary btn-lg rounded-5"
+            download="archivo.pdf">Descargar Brochure</a>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
+  <section class="section-form py-5 ">
+    <div class="container-fluid form-container">
+      <div class="row form-container justify-content-center align-items-center">
+        <div class="col-xl-7 col-12 py-4 py-lg-3">
+          <div class="pb-5 ">
+            <p class="tform-info text-center text-xl-start">
+              <span>Contacta a uno de nuestros expertos</span> <br />
+              para acompañarte en cada paso de tu viaje digital.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-xl-5 col-12 py-lg-3 form-footer justify-content-center">
+
+          <form action="https://formsubmit.co/sharont.fernandez@touchconsulting.es" method="POST" class="needs-validation"
+            novalidate>
+            <div class="form-floating mb-3">
+              <input type="text" name="Nombre" class="form-control rounded-4" id="floatingInput" required>
+              <label for="floatingInput" class="form-label">Nombre</label>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" name="Email" class="form-control rounded-4" id="floatingInput" required>
+              <label for="floatingInput" class="form-label">Correo electrónico</label>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="number" name="Telefono" class="form-control rounded-4" id="floatingInput" required>
+              <label for="floatingInput" class="form-label">Teléfono</label>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" name="Empresa/Organizacion" class="form-control rounded-4" id="floatingInput" required>
+              <label for="floatingInput" class="form-label">Empresa/Organización</label>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+
+            <div class="form-floating mb-3">
+
+              <input type="hidden" name="Sector" id="floatingInput">
+              <select for="floatingInput" class="form-select rounded-4" required aria-label="Default select example">
+                <option selected>Sector</option>
+                <option value="1">Alimentos</option>
+                <option value="2">Automotriz</option>
+                <option value="3">Bebidas</option>
+                <option value="4">Consultoría​</option>
+                <option value="5">Educación</option>
+                <option value="6">Inmobiliario</option>
+                <option value="7">Logística</option>
+                <option value="8">Minería y Construcción</option>
+                <option value="9">Retail / Tienda por departamento</option>
+                <option value="10">Servicios financieros</option>
+                <option value="11">Urbanismo</option>
+                <option value="12">Viajes y entretenimiento</option>
+                <option value="13">Otro</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid state.
+              </div>
+            </div>
+
+            <div class="form-floating">
+              <textarea name="Mensaje" class="form-control rounded-bottom-0 rounded-top-4"
+                placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required></textarea>
+              <label for="floatingTextarea2">Mensaje</label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-info rounded-top-0 rounded-bottom-4">Enviar</button>
+            </div>
+
+
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="section_footer">
+    <div class="container_footer">
+      <div class="col-12 py-5 py-xl-3 text-center text-xl-start">
+        <img class="logo_footer" src="docs/img/LogotiposTouch_Logo_dark.png" />
+      </div>
+
+      <div class="col-12 py-5 text-center text-xl-start">
+        <div class="row info_contact">
+          <div class="col info_peru py-4 py-sm-0">
+            <div class="country_title">
+              <img class="icon-flag" src="docs/img/peru.png" alt="" />
+              <p class="name_country">Perú</p>
+            </div>
+
+            <div class="phone_info">
+              <span>
+                <i class="bi bi-telephone-fill text-primary"></i>
+                +51 994304009
+              </span>
+            </div>
+
+            <div class="email_info">
+              <span>
+                <i class="bi bi-envelope-fill text-primary"></i>
+                robert.ordonñes@touchconsulting.pe
+              </span>
+            </div>
+
+            <div class="phone_info">
+              <span>
+                <i class="bi bi-telephone-fill text-primary"></i>
+                +51 932057040
+              </span>
+            </div>
+
+            <div class="email_info">
+              <span>
+                <i class="bi bi-envelope-fill text-primary"></i>
+                cesar@touchconsulting.pe
+              </span>
+            </div>
+
+            <div class="addres_info">
+              <span>
+                <i class="bi bi-geo-alt-fill text-primary"></i>
+                C. Loz Zorzales 130 - Of. 401, San Isidro, Lima - Perú
+              </span>
+            </div>
+          </div>
+
+          <div class="col info_espain py-5 py-sm-0">
+            <div class="country_title">
+              <img class="icon-flag" src="docs/img/espana.png" alt="" />
+              <p class="name_country">España</p>
+            </div>
+
+            <div class="phone_info">
+              <span>
+                <i class="bi bi-telephone-fill text-primary"></i>
+                +34 664434250
+              </span>
+            </div>
+
+            <div class="email_info">
+              <span>
+                <i class="bi bi-envelope-fill text-primary"></i>
+                cesar@touchconsulting.es
+              </span>
+            </div>
+
+            <div class="phone_info">
+              <span>
+                <i class="bi bi-telephone-fill text-primary"></i>
+                +34 662666012
+              </span>
+            </div>
+
+            <div class="email_info">
+              <span>
+                <i class="bi bi-envelope-fill text-primary"></i>
+                sharont.fernandez@touchconsulting.es
+              </span>
+            </div>
+
+            <div class="addres_info">
+              <span>
+                <i class="bi bi-geo-alt-fill text-primary"></i>
+                C. Jose Galan Merino, 6, Edificio CREA, Sevilla - España
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 py-3 text-center text-xl-start">
+        <div class="row">
+          <div class="col-12 ">
+            <a style="text-decoration: none;" href="https://www.linkedin.com/company/926401/admin/ ">
+              <img class="icon-social" src="docs/img/linkedin.png" alt="" />
+            </a>
+            <a style="text-decoration: none;" href="https://www.facebook.com/TOUCHrrss ">
+              <img class="icon-social" src="docs/img/facebook.png" alt="" />
+            </a>
+            <a style="text-decoration: none;" href="https://www.instagram.com/touch_rrss/ ">
+              <img class="icon-social" src="docs/img/instagram.png" alt="" />
+            </a>
+            <a style="text-decoration: none;" href="https://twitter.com/TOUCH_rrss ">
+              <img class="icon-social" src="docs/img/twiter.png" alt="" />
+            </a>
+
+
+
+          </div>
+
+          <div class="col-12 mt-3 mt-md-0">
+            <hr class="my-2" />
+
+            <div class="text-center py-3" style="color: #767d96">
+              <p>© 2023 Touch Consulting</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
